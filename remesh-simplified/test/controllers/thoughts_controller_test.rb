@@ -12,7 +12,7 @@ class ThoughtsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create thought" do
     assert_difference('Thought.count') do
-      post thoughts_url, params: { thought: { date_time_sent: @thought.date_time_sent, text: @thought.text } }, as: :json
+      post thoughts_url, params: { thought: { date_time_sent: @thought.date_time_sent, message_id: @thought.message_id, text: @thought.text } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class ThoughtsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update thought" do
-    patch thought_url(@thought), params: { thought: { date_time_sent: @thought.date_time_sent, text: @thought.text } }, as: :json
+    patch thought_url(@thought), params: { thought: { date_time_sent: @thought.date_time_sent, message_id: @thought.message_id, text: @thought.text } }, as: :json
     assert_response 200
   end
 

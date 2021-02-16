@@ -46,6 +46,6 @@ class ThoughtsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def thought_params
-      params.require(:thought).permit(:text, :date_time_sent)
+      params.require(:thought).permit(:text, :date_time_sent, :message_id)
     end
 end

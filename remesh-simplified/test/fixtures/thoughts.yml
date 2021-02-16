@@ -3,7 +3,9 @@
 one:
   text: MyString
   date_time_sent: MyString
+  message: one
 
 two:
   text: MyString
   date_time_sent: MyString
+  message: two

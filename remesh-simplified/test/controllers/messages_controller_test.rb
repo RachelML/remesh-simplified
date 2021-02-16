@@ -12,7 +12,7 @@ class MessagesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create message" do
     assert_difference('Message.count') do
-      post messages_url, params: { message: { date_time_sent: @message.date_time_sent, text: @message.text } }, as: :json
+      post messages_url, params: { message: { conversation_id: @message.conversation_id, date_time_sent: @message.date_time_sent, text: @message.text } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class MessagesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update message" do
-    patch message_url(@message), params: { message: { date_time_sent: @message.date_time_sent, text: @message.text } }, as: :json
+    patch message_url(@message), params: { message: { conversation_id: @message.conversation_id, date_time_sent: @message.date_time_sent, text: @message.text } }, as: :json
     assert_response 200
   end
 
