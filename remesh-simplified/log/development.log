@@ -156,3 +156,364 @@ Completed 200 OK in 32ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 262
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   [1m[36mThought Create (0.3ms)[0m  [1m[32mINSERT INTO "thoughts" ("text", "message_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "I lived in new york for 10 years so thin crust is far superior"], ["message_id", 3], ["created_at", "2021-02-17 00:11:28.463705"], ["updated_at", "2021-02-17 00:11:28.463705"]]
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/conversations" for ::1 at 2021-02-16 19:21:43 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.5ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 34ms (Views: 24.8ms | ActiveRecord: 4.2ms | Allocations: 6538)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:21:44 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1076)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:21:44 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:22:01 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1076)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:23:45 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 1076)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:23:50 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1076)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:23:53 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:23:59 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.5ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.5ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:24:05 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.5ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:24:08 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:24:15 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.5ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:24:19 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.5ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:27:29 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.5ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 1057)
+
+
+Started GET "/" for ::1 at 2021-02-16 19:28:23 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Library/Ruby/Gems/2.6.0/gems/railties-6.0.3.5/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.6ms | Allocations: 315)
+Completed 200 OK in 21ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 1589)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:32:05 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.6ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 15.4ms | ActiveRecord: 6.8ms | Allocations: 5765)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:32:18 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:33:04 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.4ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:34:04 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1060)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:35:16 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:36:09 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:36:27 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:37:27 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:38:28 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1057)
+
+
+Started GET "/" for ::1 at 2021-02-16 19:42:32 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.5ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.5ms | Allocations: 1057)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-02-16 19:42:32 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3.5) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.5) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/conversations" for ::1 at 2021-02-16 19:43:28 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.3ms | Allocations: 1091)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:44:11 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:44:17 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.6ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:44:21 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1058)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:44:22 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:44:58 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:46:29 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.4ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:46:31 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (1.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 1.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:46:52 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:58:18 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (1.1ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 1.1ms | Allocations: 1115)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 19:58:34 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.8ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.8ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 20:00:00 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 20:00:00 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 20:00:07 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 20:00:12 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.2ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 20:00:19 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 20:00:24 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 20:00:42 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (1.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 1.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 20:00:44 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.3ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1057)
+
+
+Started GET "/conversations" for ::1 at 2021-02-16 20:01:10 -0500
+Processing by ConversationsController#index as HTML
+  [1m[36mConversation Load (0.4ms)[0m  [1m[34mSELECT "conversations".* FROM "conversations"[0m
+  ↳ app/controllers/conversations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1057)
+
+
+Started OPTIONS "/conversations" for ::1 at 2021-02-16 20:01:26 -0500
+  
+ActionController::RoutingError (No route matches [OPTIONS] "/conversations"):
+  
+actionpack (6.0.3.5) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.5) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.5) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.5) lib/rails/engine.rb:527:in `call'
+puma (4.3.7) lib/puma/configuration.rb:228:in `call'
+puma (4.3.7) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.7) lib/puma/server.rb:472:in `process_client'
+puma (4.3.7) lib/puma/server.rb:328:in `block in run'
+puma (4.3.7) lib/puma/thread_pool.rb:134:in `block in spawn_thread'

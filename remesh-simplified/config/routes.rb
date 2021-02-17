@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get '/', to: 'conversations#index'
+
   resources :thoughts
   resources :messages
   resources :conversations
