@@ -11,6 +11,16 @@ const createConversation = async (data) => {
     return resp.data
   }
 
+  const createMessage = async (data) => {
+    const resp = await api.post('/messages', { message: data })
+    return resp.data
+  }
+
+  const readAllMessages= async () => {
+    const resp = await api.get('/messages')
+    return resp.data
+  }
+
   const readAllConversations = async () => {
     const resp = await api.get('/conversations')
     return resp.data
@@ -18,7 +28,8 @@ const createConversation = async (data) => {
 
   export {
     createConversation,
-    readAllConversations
-   
+    readAllConversations,
+    readAllMessages,
+    createMessage
   }
   

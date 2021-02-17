@@ -11,7 +11,9 @@ import ConversationPage from './components/ConversationPage'
 
 import {
   createConversation,
-  readAllConversations
+  readAllConversations,
+  readAllMessages,
+  createMessage
  
 } from './services/api-helper'
 
@@ -21,10 +23,15 @@ class App extends Component {
     super(props);
     this.state = {
       conversations: [],
+      messages: [],
       conversationForm: {
         title: ""
 
-        
+      },
+
+      messageForm: {
+        title: ""
+
       },
       
     };
@@ -32,6 +39,8 @@ class App extends Component {
   
   async componentDidMount() {
     this.getConversations()
+    this.getMessages()
+
   }
 
 
@@ -42,6 +51,13 @@ class App extends Component {
     })
   }
 
+  getMessages = async () => {
+    const messages = await readAllMessages();
+    this.setState({
+      messages
+    })
+  }
+
 
   newConversation = async (e) => {
     e.preventDefault();
@@ -49,6 +65,17 @@ class App extends Component {
     this.setState(prevState => ({
       conversations: [...prevState.conversations, conversation],
       conversationForm: {
+        title: ""
+      }
+    }))
+  }
+
+  newMessage= async (e) => {
+    e.preventDefault();
+    const message = await createMessage(this.state.messageForm);
+    this.setState(prevState => ({
+      messages: [...prevState.messages, message],
+      messageForm: {
         title: ""
       }
     }))
@@ -101,6 +128,11 @@ class App extends Component {
               handleFormChange={this.handleFormChange}
               mountEditForm={this.mountEditForm}
               conversationForm={this.state.conversationForm}
+              conversations={this.state.conversations}
+              messageForm={this.state.messageForm}
+              newConversation={this.newConversation} 
+              messages={this.state.messages}
+              newMessage={this.newMessage}
                />
           }}
         />

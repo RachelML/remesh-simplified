@@ -24,7 +24,6 @@ function ViewConversation(props) {
         <div
         onClick={() => {
           props.history.push('/new/conversation');
-          window.scrollTo(0, 0);
         }}>
     
         <button>Create a new conversation</button>
