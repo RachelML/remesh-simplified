@@ -7,11 +7,11 @@ function ViewConversation(props) {
     return (
         
       <div>
-           {/* {props.conversations.map(conversation => (
+          <h2>A list of conversations:</h2>
+           {props.conversations.map(conversation => (
           <div
             key={conversation.id}
             onClick={(e) => {
-              debugger;
               props.history.push(`/conversations/${conversation.id}`);
             }}>
             <h3>
@@ -19,17 +19,17 @@ function ViewConversation(props) {
             </h3>
           </div>
         ))}
+      
+
         <div
-          onClick={() => {
-            props.history.push('/new/conversation');
-          }}>
-          <img
-            alt="Create a new teacher"
-            src="https://image.flaticon.com/icons/png/512/14/14980.png"
-            className="plus-sign" />
-          <h3>Create a new Conversation</h3>
-        </div> 
-           */}
+        onClick={() => {
+          props.history.push('/new/conversation');
+          window.scrollTo(0, 0);
+        }}>
+    
+        <button>Create a new conversation</button>
+      </div>
+          
        
       </div>
     )

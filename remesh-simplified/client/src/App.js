@@ -5,6 +5,9 @@ import { withRouter } from 'react-router';
 
 import CreateConversation from './components/CreateConversation'
 import ViewConversation from './components/ViewConversation'
+import ConversationPage from './components/ConversationPage'
+
+
 
 import {
   createConversation,
@@ -70,7 +73,7 @@ class App extends Component {
           <h1>Remesh Simplified</h1>
         </header>
         <Route
-          path="/"
+          path="/new/conversation"
           render={() => (
             <CreateConversation
               handleFormChange={this.handleFormChange}
@@ -86,6 +89,23 @@ class App extends Component {
               newConversation={this.newConversation} />
           )}
         />
+
+          <Route
+          path="/conversations/:id"
+          render={(props) => {
+            const { id } = props.match.params;
+            const conversation = this.state.conversations.find(el => el.id === parseInt(id));
+            return <ConversationPage
+              id={id}
+              conversation={conversation}
+              handleFormChange={this.handleFormChange}
+              mountEditForm={this.mountEditForm}
+              conversationForm={this.state.conversationForm}
+               />
+          }}
+        />
+
+
       </div>
     );
   }
